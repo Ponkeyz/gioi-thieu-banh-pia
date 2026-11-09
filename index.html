@@ -11,38 +11,222 @@
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{--wine:#762f27;--wine-dark:#512019;--rose:#a64e3d;--cream:#fff9f0;--paper:#f7efe3;--gold:#d7a85d;--ink:#30241f;--muted:#77685f;--shadow:0 18px 50px rgba(74,39,27,.12)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;color:var(--ink);background:var(--cream);font-family:'Be Vietnam Pro',sans-serif;line-height:1.75}img{display:block;width:100%;object-fit:cover}a{color:inherit;text-decoration:none}button,input{font:inherit}.container{width:min(1120px,calc(100% - 44px));margin-inline:auto}
-    h1,h2,h3{font-family:'Lora',serif;line-height:1.25}.top-note{background:var(--wine-dark);color:#f8e9d2;text-align:center;padding:7px 16px;font-size:.76rem;letter-spacing:.08em}header{position:sticky;z-index:20;top:0;background:rgba(255,249,240,.95);backdrop-filter:blur(14px);border-bottom:1px solid rgba(118,47,39,.1)}.nav-wrap{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;color:var(--wine);font-family:'Lora',serif;font-weight:700;font-size:1.1rem;line-height:1.2}.brand-mark{width:42px;height:42px;display:grid;place-items:center;border:1px solid #d6b989;border-radius:50%;font-size:1.2rem;background:#fff3dc}.brand small{display:block;margin-top:3px;color:var(--muted);font:500 .62rem 'Be Vietnam Pro',sans-serif;letter-spacing:.1em;text-transform:uppercase}.nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,32px);list-style:none;margin:0;padding:0}.nav-links a{font-size:.87rem;font-weight:600;transition:color .2s}.nav-links a:hover{color:var(--rose)}.nav-links .login-link{padding:10px 17px;color:white;background:var(--wine);border-radius:999px}.menu-toggle{display:none;border:0;background:none;color:var(--wine);font-size:1.55rem;cursor:pointer}
-    .hero{position:relative;min-height:590px;display:grid;align-items:center;overflow:hidden;background:#43261b;color:white}.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,20,16,.82),rgba(52,27,19,.61) 48%,rgba(45,24,17,.15)),url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=2000&q=85') center 53%/cover}.hero-content{position:relative;z-index:1;width:min(1120px,calc(100% - 44px));margin:auto;padding:88px 0 100px}.eyebrow{color:var(--gold);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.74rem}h1{max-width:700px;margin:18px 0;font-size:clamp(2.8rem,6vw,5rem);font-weight:600}h1 span{color:#f0c77e}.hero p{max-width:560px;color:#f6e8d8;font-size:1.03rem}.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;margin-top:18px;padding:13px 22px;border:1px solid var(--gold);border-radius:999px;background:var(--gold);color:#382118;font-weight:700;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px);background:#e7bd77}.section{padding:94px 0}.section-heading{max-width:690px;margin:0 auto 43px;text-align:center}.section-heading h2{margin:10px 0 12px;color:var(--wine-dark);font-size:clamp(2rem,4vw,3rem)}.section-heading p{margin:0;color:var(--muted)}
-    .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.story-photo{position:relative;padding:0 0 24px 24px}.story-photo:before{content:'';position:absolute;z-index:-1;left:0;bottom:0;width:78%;height:75%;background:#ead8bb;border-radius:4px}.story-photo img{height:440px;border-radius:5px;box-shadow:var(--shadow)}.story-copy h2{margin:10px 0 18px;color:var(--wine-dark);font-size:clamp(2rem,4vw,2.8rem)}.story-copy p{color:var(--muted)}.fact-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.fact{padding:15px 10px;text-align:center;background:#f4e9d9;border-radius:8px}.fact strong{display:block;color:var(--wine);font-family:'Lora',serif;font-size:1.15rem}.fact span{color:var(--muted);font-size:.75rem}.features,.author{background:var(--paper)}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.feature-card{padding:28px 25px;background:rgba(255,255,255,.7);border:1px solid #eee1cf;border-radius:10px}.feature-icon{font-size:1.8rem}.feature-card h3{margin:12px 0 8px;color:var(--wine);font-size:1.28rem}.feature-card p{margin:0;color:var(--muted);font-size:.92rem}
-    .gallery-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:220px 220px;gap:16px}.gallery-item{position:relative;overflow:hidden;border-radius:8px;background:#ead8bb;margin:0}.gallery-item:first-child{grid-row:span 2}.gallery-item img{height:100%;transition:transform .5s}.gallery-item:hover img{transform:scale(1.05)}.gallery-caption{position:absolute;inset:auto 0 0;padding:34px 16px 14px;color:white;font-weight:600;background:linear-gradient(transparent,rgba(35,19,13,.75))}.video-section{color:white;background:var(--wine-dark)}.video-section .section-heading h2{color:white}.video-section .section-heading p{color:#e6cfc0}.video-frame{position:relative;width:min(850px,100%);margin:auto;aspect-ratio:16/9;overflow:hidden;border:1px solid rgba(255,255,255,.2);border-radius:12px;background:#26140f;box-shadow:0 20px 60px rgba(0,0,0,.24)}.video-frame iframe{width:100%;height:100%;border:0}.author-card{display:grid;grid-template-columns:300px 1fr;gap:44px;align-items:center;width:min(850px,100%);margin:auto;padding:28px;background:var(--cream);border-radius:12px;box-shadow:var(--shadow)}.author-card img{height:300px;border-radius:8px;background:#ead8bb}.author-card h2{margin:8px 0 12px;color:var(--wine-dark);font-size:2rem}.author-card p{color:var(--muted)}.author-note{color:var(--rose)!important;font-weight:600}.login-card{width:min(480px,100%);margin:auto;padding:35px;border:1px solid #eadbc5;border-radius:12px;background:white;box-shadow:var(--shadow)}.login-card h2{margin:0 0 6px;color:var(--wine-dark);font-size:2rem}.login-card>p{margin:0 0 23px;color:var(--muted)}.field{margin-bottom:16px}.field label{display:block;margin-bottom:6px;font-size:.86rem;font-weight:700}.field input{width:100%;padding:12px 14px;border:1px solid #dfd1c1;border-radius:7px;outline:0;background:#fffdf9}.field input:focus{border-color:var(--rose);box-shadow:0 0 0 3px rgba(166,78,61,.12)}.login-card .button{width:100%;border:0;cursor:pointer}.form-message{min-height:24px;margin:12px 0 0;color:var(--wine);font-size:.86rem;text-align:center}
-    footer{padding:54px 0 20px;color:#f8e9d9;background:#351a16}.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding-bottom:35px}footer h3{margin:0 0 14px;color:#f0c77e;font-size:1.15rem}footer p,footer li{color:#ddc9bb;font-size:.88rem}.member-list{margin:0;padding:0;list-style:none}.member-list li{padding:4px 0}.member-list li:before{content:'✦';margin-right:9px;color:var(--gold)}.copyright{padding-top:18px;border-top:1px solid rgba(255,255,255,.15);color:#bda89a;font-size:.78rem;text-align:center}
-    @media(max-width:760px){.nav-wrap{min-height:68px}.menu-toggle{display:block}.nav-links{position:absolute;top:68px;left:0;right:0;display:none;align-items:stretch;gap:0;padding:8px 22px 18px;background:var(--cream);border-bottom:1px solid #eadbc5}.nav-links.open{display:flex;flex-direction:column}.nav-links li{padding:9px 0}.nav-links .login-link{display:inline-block;padding:8px 15px}.hero{min-height:540px}.hero:before{background-position:60% center}.section{padding:70px 0}.story-grid{grid-template-columns:1fr;gap:35px}.story-photo img{height:340px}.feature-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 170px 170px}.gallery-item:first-child{grid-row:span 1;grid-column:span 2}.author-card{grid-template-columns:1fr;gap:22px;padding:20px}.author-card img{height:250px}.footer-grid{grid-template-columns:1fr 1fr;gap:25px}.footer-grid>div:first-child{grid-column:span 2}}
-    @media(max-width:430px){.container,.hero-content{width:min(100% - 32px,1120px)}.brand{font-size:1rem}.hero{min-height:500px}.fact-row{gap:7px}.fact{padding:12px 5px}.fact strong{font-size:1rem}.gallery-grid{gap:10px;grid-template-rows:190px 145px 145px}.login-card{padding:25px 20px}.footer-grid{grid-template-columns:1fr}.footer-grid>div:first-child{grid-column:auto}}
-  </style>
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;color:var(--ink);background:var(--cream);font-family:'Be Vietnam Pro',sans-serif;line-height:1.75}img{display:block;width:100%;object-fit:cover}a{color:inherit;text-decoration:none}button,input{font:inherit}.container{width:min(1120px,calc(100% - 44px));margin-inline:auto}.hero-content{position:relative;z-index:1;width:min(1120px,calc(100% - 44px));margin:auto;padding:88px 0 100px}h1,h2,h3{font-family:'Lora',serif;line-height:1.25}.top-note{background:var(--wine-dark);color:#f8e9d2;text-align:center;padding:7px 16px;font-size:.76rem;letter-spacing:.08em}header{position:sticky;top:0;z-index:20;background:rgba(255,249,240,.95);backdrop-filter:blur(14px);border-bottom:1px solid rgba(118,47,39,.1)}.nav-wrap{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;color:var(--wine);font-family:'Lora',serif;font-weight:700;font-size:1.1rem;line-height:1.2}.brand-mark{width:42px;height:42px;display:grid;place-items:center;border:1px solid #d6b989;border-radius:50%;font-size:1.2rem;background:#fff3dc}.brand small{display:block;color:var(--muted);font:500 .62rem 'Be Vietnam Pro',sans-serif;letter-spacing:.1em;text-transform:uppercase}.nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,32px);list-style:none;margin:0;padding:0}.nav-links a{font-size:.87rem;font-weight:600;transition:color .2s}.nav-links a:hover{color:var(--rose)}.login-link{padding:10px 17px;color:white;background:var(--wine);border-radius:999px}.menu-toggle{display:none;border:0;background:none;color:var(--wine);font-size:1.55rem;cursor:pointer}.hero{position:relative;min-height:590px;display:grid;align-items:center;overflow:hidden;background:#43261b;color:white}.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,20,16,.82),rgba(82,32,25,.61) 48%,rgba(69,37,31,.15)),url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=2000&q=85') center 35%/cover no-repeat}.hero-content{position:relative;z-index:1;width:min(1120px,calc(100% - 44px));margin:auto;padding:88px 0 100px}.eyebrow{color:var(--gold);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.74rem}.hero h1{max-width:700px;margin:18px 0; font-size:clamp(2.8rem,6vw,5rem);font-weight:600}.hero h1 span{color:#f0c77e}.hero p{max-width:560px;color:#f6e8d8;font-size:1.03rem}.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;margin-top:18px;padding:13px 22px;border:1px solid var(--gold);border-radius:999px;background:var(--gold);color:#382116;font-weight:700;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px);background:#e7bd73}.section{padding:94px 0}.section-heading{max-width:690px;margin:0 auto 43px;text-align:center}.section-heading h2{margin:10px 0 12px;color:var(--wine-dark);font-size:clamp(2rem,4vw,3rem)}.section-heading p{margin:0;color:var(--muted)}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.story-photo{position:relative;padding:0 0 24px 24px}.story-photo:before{content:'';position:absolute;z-index:-1;left:0;bottom:0;width:78%;height:75%;background:#ead8bb;border-radius:4px}.story-photo img{height:440px;border-radius:5px;box-shadow:var(--shadow)}.story-copy h2{margin:10px 0 18px;color:var(--wine-dark);font-size:clamp(2rem,4vw,2.8rem)}.story-copy p{margin:0;color:var(--muted)}.fact-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.fact{padding:15px 10px;text-align:center;background:#f4e9d7;border-radius:8px}.fact strong{display:block;color:var(--wine);font-family:'Lora',serif;font-size:1.15rem}.fact span{color:var(--muted);font-size:.75rem}.features,.author{background:var(--paper)}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.feature-card{padding:28px 25px;background:rgba(255,255,255,.7);border:1px solid #eedfc6;border-radius:10px}.feature-icon{font-size:1.8rem}.feature-card h3{margin:12px 0 8px;color:var(--wine-dark);font-size:1.18rem}.feature-card p{margin:0;color:var(--muted);font-size:.92rem}.gallery-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:220px 220px;gap:16px}.gallery-item{position:relative;overflow:hidden;border-radius:8px;background:#ead8bb;margin:0}.gallery-item:first-child{grid-row:span 2}.gallery-item img{height:100%;transition:transform .5s}.gallery-item:hover img{transform:scale(1.05)}.gallery-caption{position:absolute;inset:auto 0 0 0;padding:34px 16px 14px;color:white;font-weight:600;background:linear-gradient(transparent,rgba(35,19,13,.75))}.video-section{color:white;background:var(--wine-dark)}.video-section .section-heading h2{color:white}.video-section .section-heading p{color:#e6cfc9}.video-frame{position:relative;width:min(850px,100%);margin:auto;aspect-ratio:16/9;overflow:hidden;border:1px solid rgba(255,255,255,.2);border-radius:12px;background:#26140f;box-shadow:0 20px 60px rgba(0,0,0,.24)}.video-frame iframe{width:100%;height:100%;border:0}.author-card{display:grid;grid-template-columns:300px 1fr;gap:44px;align-items:center;width:min(850px,100%);margin:auto;padding:28px;background:var(--cream);border-radius:12px;box-shadow:var(--shadow)}.author-card img{height:300px;border-radius:8px;background:#ead8bb}.author-card h2{margin:8px 0 12px;color:var(--wine-dark);font-size:2rem}.author-card p{margin:0;color:var(--muted)}.author-note{color:var(--rose)!important;font-weight:600}.login-card{width:min(480px,100%);margin:auto;padding:35px;border:1px solid #eadbc5;border-radius:12px;background:white;box-shadow:var(--shadow)}.login-card h2{margin:0 0 6px;color:var(--wine-dark);font-size:2rem}.login-card>p{margin:0 0 23px;color:var(--muted)}.field{margin-bottom:16px}.field label{display:block;margin-bottom:6px;font-size:.86rem;font-weight:700}.field input{width:100%;padding:12px 14px;border:1px solid #dfd1c1;border-radius:7px;outline:0;background:#fffdf9}.field input:focus{border-color:var(--rose);box-shadow:0 0 0 3px rgba(166,78,61,.12)}.login-card .button{width:100%;border:0;cursor:pointer}.form-message{min-height:24px;margin:12px 0 0;color:var(--wine);font-size:.86rem;text-align:center}footer{padding:54px 0 20px;color:#f8e9d9;background:#351a16}.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1.4fr;gap:40px;padding-bottom:35px}.footer-grid h3{margin:0 0 14px;color:#f0c77e;font-size:1.15rem}.footer-grid p,.footer-grid li{color:#ddc9bb;font-size:.88rem}.member-list{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px}.member-list li{display:flex;align-items:center;gap:10px;padding:4px 0;color:#f3e4c9}.member-list li::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--gold);display:inline-block;box-shadow:0 0 0 3px rgba(215,168,93,.2)}.copyright{padding-top:18px;border-top:1px solid rgba(255,255,255,.15);color:#bda694;font-size:.78rem;text-align:center}@media(max-width:760px){.nav-wrap{min-height:68px}.menu-toggle{display:block}.nav-links{position:absolute;top:68px;left:0;right:0;display:none;align-items:stretch;gap:0;padding:8px 22px 18px;background:var(--cream);border-bottom:1px solid rgba(118,47,39,.1)}.nav-links.open{display:flex;flex-direction:column}.nav-links li{padding:9px 0}.hero{min-height:540px}.hero-content{padding:70px 0 82px}.section{padding:70px 0}.story-grid{grid-template-columns:1fr;gap:35px}.feature-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr;grid-template-rows:auto}.gallery-item:first-child{grid-row:auto}.author-card{grid-template-columns:1fr;gap:22px;padding:20px}.footer-grid{grid-template-columns:1fr;gap:25px}.member-list{grid-template-columns:1fr}}@media(max-width:430px){.container,.hero-content{width:min(100% - 32px,1120px)}.brand{font-size:1rem}.hero{min-height:500px}.fact-row{gap:7px}.fact{padding:12px 5px}.fact strong{font-size:1rem}.login-card{padding:25px 20px}.member-list{grid-template-columns:1fr}}  </style>
 </head>
 <body>
   <div class="top-note">ĐẶC SẢN SÓC TRĂNG · HƯƠNG VỊ NGỌT NGÀO MIỀN TÂY</div>
-  <header><nav class="container nav-wrap" aria-label="Điều hướng chính">
-    <a class="brand" href="#trang-chu" aria-label="Bánh Pía Sóc Trăng - Trang chủ"><span class="brand-mark" aria-hidden="true">🥮</span><span>Bánh Pía Sóc Trăng<small>Hương vị quê nhà</small></span></a>
-    <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
-    <ul class="nav-links"><li><a href="#trang-chu">Trang chủ</a></li><li><a href="#hinh-anh">Hình ảnh</a></li><li><a href="#video">Video</a></li><li><a href="#tac-gia">Tác giả</a></li><li><a class="login-link" href="#dang-nhap">Đăng nhập</a></li></ul>
-  </nav></header>
+  <header>
+    <nav class="container nav-wrap" aria-label="Điều hướng chính">
+      <a class="brand" href="#trang-chu" aria-label="Bánh Pía Sóc Trăng - Trang chủ"><span class="brand-mark" aria-hidden="true">🥮</span><span>Bánh Pía Sóc Trăng<small>Hương vị quê nhà</small></span></a>
+      <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#trang-chu">Trang chủ</a></li>
+        <li><a href="#hinh-anh">Hình ảnh</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#tac-gia">Tác giả</a></li>
+        <li><a class="login-link" href="#dang-nhap">Đăng nhập</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
-    <section class="hero" id="trang-chu"><div class="hero-content"><span class="eyebrow">Đặc sản miền Tây Nam Bộ</span><h1>Bánh pía Sóc Trăng<br><span>ngọt thơm tình đất</span></h1><p>Thưởng thức lớp vỏ ngàn lớp mềm thơm, ôm trọn phần nhân đậm đà — thức quà mộc mạc đã làm say lòng biết bao người.</p><a class="button" href="#gioi-thieu">Khám phá câu chuyện <span aria-hidden="true">→</span></a></div></section>
-    <section class="section" id="gioi-thieu"><div class="container story-grid"><div class="story-photo"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=85" alt="Những chiếc bánh vàng thơm vừa được nướng"></div><div class="story-copy"><span class="eyebrow">Một thức quà trứ danh</span><h2>Câu chuyện bánh pía Sóc Trăng</h2><p>Bánh pía là món bánh nổi tiếng gắn liền với vùng đất Sóc Trăng. Qua bàn tay khéo léo của những người thợ, món bánh mang dấu ấn giao thoa văn hóa và trở thành niềm tự hào ẩm thực của miền Tây.</p><p>Bên ngoài là lớp vỏ mỏng xếp thành nhiều tầng, vàng ươm sau khi nướng. Bên trong thường có nhân đậu xanh, khoai môn, sầu riêng và trứng muối — hòa quyện thành vị ngọt bùi, béo thơm khó quên.</p><div class="fact-row"><div class="fact"><strong>Ngàn lớp</strong><span>Vỏ bánh mềm xốp</span></div><div class="fact"><strong>Đậm đà</strong><span>Nhân bánh thơm ngon</span></div><div class="fact"><strong>Sóc Trăng</strong><span>Vị quê thân thương</span></div></div></div></div></section>
-    <section class="section features"><div class="container"><div class="section-heading"><span class="eyebrow">Điều làm nên hương vị</span><h2>Thơm ngon từ những điều giản dị</h2><p>Mỗi chiếc bánh là sự kết hợp hài hòa giữa nguyên liệu gần gũi và sự chăm chút của người làm bánh.</p></div><div class="feature-grid"><article class="feature-card"><span class="feature-icon" aria-hidden="true">🥮</span><h3>Lớp vỏ ngàn tầng</h3><p>Bột được cán và gấp khéo léo, tạo nên lớp vỏ mỏng, mềm, thơm và hơi giòn nhẹ sau khi nướng.</p></article><article class="feature-card"><span class="feature-icon" aria-hidden="true">🌱</span><h3>Nhân bánh phong phú</h3><p>Đậu xanh bùi béo, khoai môn dẻo thơm, sầu riêng đậm vị cùng trứng muối mằn mặn.</p></article><article class="feature-card"><span class="feature-icon" aria-hidden="true">💛</span><h3>Thức quà quê nhà</h3><p>Một món quà thân tình mang theo nét văn hóa, câu chuyện và vị ngọt của miền đất Sóc Trăng.</p></article></div></div></section>
-    <section class="section" id="hinh-anh"><div class="container"><div class="section-heading"><span class="eyebrow">Góc ẩm thực</span><h2>Hình ảnh bánh pía</h2><p>Cùng ngắm nhìn những sắc màu vàng óng và hương vị hấp dẫn của món bánh đặc sản miền Tây.</p></div><div class="gallery-grid"><figure class="gallery-item"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=85" alt="Bánh nướng vàng thơm" loading="lazy"><figcaption class="gallery-caption">Vỏ bánh vàng ươm</figcaption></figure><figure class="gallery-item"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=85" alt="Bánh mì và bánh nướng thủ công" loading="lazy"><figcaption class="gallery-caption">Nét khéo người thợ</figcaption></figure><figure class="gallery-item"><img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=800&q=85" alt="Bánh ngọt vừa ra lò" loading="lazy"><figcaption class="gallery-caption">Thơm ngon vừa ra lò</figcaption></figure><figure class="gallery-item"><img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=85" alt="Bánh ngọt được bày biện đẹp mắt" loading="lazy"><figcaption class="gallery-caption">Món quà quê thân thương</figcaption></figure><figure class="gallery-item"><img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=800&q=85" alt="Những chiếc bánh ngọt hấp dẫn" loading="lazy"><figcaption class="gallery-caption">Ngọt bùi khó quên</figcaption></figure></div></div></section>
-    <section class="section video-section" id="video"><div class="container"><div class="section-heading"><span class="eyebrow">Xem và khám phá</span><h2>Hương vị bánh pía qua màn ảnh</h2><p>Một video giới thiệu về món bánh đặc sản Sóc Trăng.</p></div><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed?listType=search&amp;list=b%C3%A1nh%20p%C3%ADa%20S%C3%B3c%20Tr%C4%83ng" title="Video tìm hiểu về bánh pía Sóc Trăng trên YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div></section>
-    <section class="section author" id="tac-gia"><div class="container"><div class="section-heading"><span class="eyebrow">Người thực hiện</span><h2>Tác giả</h2><p>Trang web nhỏ này được thực hiện với tình yêu dành cho đặc sản quê hương.</p></div><article class="author-card"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=85" alt="Nhóm bạn cùng thực hiện dự án" loading="lazy"><div><span class="eyebrow">Dự án học tập</span><h2>Nhóm thực hiện</h2><p>Chúng mình cùng tìm hiểu, sưu tầm và chia sẻ những thông tin thú vị về bánh pía Sóc Trăng — món quà ngọt ngào của miền Tây Nam Bộ.</p><p class="author-note">Trường THPT Hoàng Diệu · Sóc Trăng</p></div></article></div></section>
-    <section class="section login-section" id="dang-nhap"><div class="container"><div class="section-heading"><span class="eyebrow">Góc thành viên</span><h2>Đăng nhập</h2><p>Biểu mẫu minh họa giao diện đăng nhập cho bài tập.</p></div><form class="login-card" id="login-form"><h2>Chào bạn!</h2><p>Điền thông tin để tiếp tục.</p><div class="field"><label for="email">Địa chỉ email</label><input id="email" name="email" type="email" placeholder="ban@example.com" autocomplete="email" required></div><div class="field"><label for="password">Mật khẩu</label><input id="password" name="password" type="password" placeholder="Nhập mật khẩu" autocomplete="current-password" required minlength="6"></div><button class="button" type="submit">Đăng nhập</button><p class="form-message" id="form-message" role="status" aria-live="polite"></p></form></div></section>
+    <section class="hero" id="trang-chu">
+      <div class="hero-content">
+        <span class="eyebrow">Đặc sản miền Tây Nam Bộ</span>
+        <h1>Bánh pía Sóc Trăng<br><span>ngọt thơm tình đất</span></h1>
+        <p>Thực đơn giản của du khách nhưng lại là ký ức rất riêng: lớp vỏ giòn, nhân ngọt dẻo, mùi thơm của mè, đậu xanh và hương vị quê nhà được giữ nguyên từ cách làm cổ truyền.</p>
+        <a class="button" href="#gioi-thieu">Khám phá ngay <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="section" id="gioi-thieu">
+      <div class="container story-grid">
+        <div class="story-photo">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=85" alt="Nghề bánh pía Sóc Trăng">
+        </div>
+        <div class="story-copy">
+          <span class="eyebrow">Về bánh pía</span>
+          <h2>Bột mỳ, mứt và tiếng gọi của quê nhà</h2>
+          <p>Bánh pía Sóc Trăng là món ăn mang dấu ấn văn hóa rất riêng của miền đất này. Từ những nguyên liệu giản dị nhưng được lựa chọn kỹ lưỡng, bánh mang hương vị đậm đà, bùi bùi và ngọt dịu, khiến ai đã ăn cũng khó quên.</p>
+          <div class="fact-row">
+            <div class="fact"><strong>100%</strong><span>hương vị quê hương</span></div>
+            <div class="fact"><strong>3</strong><span>thành phần chính</span></div>
+            <div class="fact"><strong>1</strong><span>ký ức khó quên</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Điều làm nên hương vị</span>
+          <h2>Thơm ngon từ những điều giản dị</h2>
+          <p>Chỉ cần vài nguyên liệu quen thuộc, nhưng khi được làm đúng cách, bánh pía mang đến sự cân bằng hoàn hảo giữa giòn, ngọt và thơm.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🥮</span>
+            <h3>Vỏ bánh giòn mượt</h3>
+            <p>Vỏ bánh được làm từ bột mỳ cùng kỹ thuật cán mỏng, tạo lớp vỏ vàng ươm và giòn rụm, không bị khô cứng.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🌾</span>
+            <h3>Nhân bánh đậm vị</h3>
+            <p>Nhân bánh thường gồm đậu xanh, mè, mứt hoặc dừa, tạo nên sự bùi, thơm và ngọt vừa phải, rất phù hợp với khẩu vị người Việt.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">✨</span>
+            <h3>Hương thơm lưu giữ</h3>
+            <p>Nhờ cách nướng và thành phần tỉ mỉ, bánh luôn giữ được mùi thơm quen thuộc, khiến mỗi miếng bánh đều khiến người thưởng thức muốn ăn thêm.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hinh-anh">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Góc ẩm thực</span>
+          <h2>Hình ảnh bánh pía</h2>
+          <p>Cùng ngắm nhìn những hình ảnh gợi nhớ về nét đẹp giản dị nhưng đậm chất miền Tây của bánh pía Sóc Trăng.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=85" alt="Bánh pía Sóc Trăng" loading="lazy">
+            <figcaption class="gallery-caption">Vỏ bánh giòn và nhân ngọt đậm vị</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=85" alt="Bánh pía truyền thống" loading="lazy">
+            <figcaption class="gallery-caption">Bánh pía truyền thống</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=85" alt="Nguyên liệu bánh pía" loading="lazy">
+            <figcaption class="gallery-caption">Nhân bánh thơm lừng</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=85" alt="Sản phẩm bánh pía" loading="lazy">
+            <figcaption class="gallery-caption">Món quà mang hương vị quê</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d8d?auto=format&fit=crop&w=800&q=85" alt="Hương vị bánh pía" loading="lazy">
+            <figcaption class="gallery-caption">Mùi thơm tinh tế</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section video-section" id="video">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Xem và khám phá</span>
+          <h2>Hương vị bánh pía qua màn ảnh</h2>
+          <p>Mỗi khung hình đều gợi về sự gần gũi, mộc mạc và đậm chất miền Tây trong món bánh pía của Sóc Trăng.</p>
+        </div>
+        <div class="video-frame">
+          <iframe src="https://www.youtube-nocookie.com/embed?listType=search&list=banh+pia+soc+trang" title="Video bánh pía Sóc Trăng" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section author" id="tac-gia">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Người thực hiện</span>
+          <h2>Tác giả</h2>
+          <p>Trang web nhỏ này là lời chia sẻ về món bánh pía Sóc Trăng với tinh thần giữ gìn truyền thống, giữ hương vị quê nhà và lan toả niềm tự hào văn hoá Việt.</p>
+        </div>
+        <article class="author-card">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=85" alt="Tác giả trang web" loading="lazy">
+          <div>
+            <span class="eyebrow">Đội ngũ sáng tạo</span>
+            <h2>Nhóm thực hiện</h2>
+            <p>Chúng tôi muốn giữ lại một góc nhỏ của hương vị quê hương thông qua từng chi tiết trên website: hình ảnh, lời mô tả và cách trình bày để mọi người dễ cảm nhận sự giản dị mà đậm đà của bánh pía Sóc Trăng.</p>
+            <p class="author-note">Tự hào là món quà của đất và người, không chỉ để ăn mà còn để nhớ.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section login-section" id="dang-nhap">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Góc thành viên</span>
+          <h2>Đăng nhập</h2>
+          <p>Biểu mẫu minh họa dùng để hiển thị trải nghiệm khách hàng với website.</p>
+        </div>
+        <form class="login-card" id="login-form">
+          <h2>Chào mừng bạn!</h2>
+          <p>Đăng nhập để khám phá thêm nhiều thông tin hữu ích về bánh pía Sóc Trăng.</p>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="ban@example.com" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="password">Mật khẩu</label>
+            <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" autocomplete="current-password" required minlength="6">
+          </div>
+          <button class="button" type="submit">Đăng nhập</button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer><div class="container"><div class="footer-grid"><div><h3>Bánh Pía Sóc Trăng</h3><p>Chia sẻ câu chuyện về thức quà ngọt thơm, mộc mạc và thân thương của miền Tây Nam Bộ.</p></div><div><h3>Danh sách thành viên</h3><ul class="member-list"><li>Thành viên 1</li><li>Thành viên 2</li><li>Thành viên 3</li><li>Thành viên 4</li></ul></div><div><h3>Lớp &amp; trường</h3><p>Lớp: ................................</p><p>THPT Hoàng Diệu</p><p>Sóc Trăng, Việt Nam</p></div></div><div class="copyright">© 2026 · Dự án giới thiệu bánh pía Sóc Trăng · Thực hiện bởi học sinh THPT Hoàng Diệu</div></div></footer>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Bánh Pía Sóc Trăng</h3>
+          <p>Chia sẻ câu chuyện về thức quà ngọt thơm, mộc mạc và thân thương của miền Tây Nam Bộ, để những giá trị truyền thống luôn được lưu giữ và lan tỏa.</p>
+        </div>
+        <div>
+          <h3>Danh sách thành viên</h3>
+          <ul class="member-list">
+            <li>Phan Lê Khánh Toàn</li>
+            <li>Phương Vĩnh Long</li>
+            <li>Trần Bảo Khang</li>
+            <li>Trần Chí Khâm</li>
+            <li>Đào Thành Đạt</li>
+            <li>Lâm Bảo Bình</li>
+            <li>Võ Anh Khoa</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Liên hệ &amp; hỗ trợ</h3>
+          <p>Hotline: +84 999 888 777</p>
+          <p>Email: contact@banpiasoctrang.vn</p>
+          <p>Địa chỉ: Sóc Trăng, Việt Nam</p>
+        </div>
+      </div>
+      <div class="copyright">© 2026 Bánh Pía Sóc Trăng. All rights reserved.</div>
+    </div>
+  </footer>
+
   <script>
-    const menuButton=document.querySelector('.menu-toggle');const navLinks=document.querySelector('.nav-links');
-    menuButton.addEventListener('click',()=>{const isOpen=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(isOpen));menuButton.setAttribute('aria-label',isOpen?'Đóng menu':'Mở menu');menuButton.textContent=isOpen?'×':'☰'});
-    navLinks.addEventListener('click',event=>{if(event.target.closest('a')){navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Mở menu');menuButton.textContent='☰'}});
-    document.querySelector('#login-form').addEventListener('submit',event=>{event.preventDefault();document.querySelector('#form-message').textContent='Đây là biểu mẫu minh họa — chưa kết nối hệ thống đăng nhập.'});
+    const menuButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuButton.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+      menuButton.setAttribute('aria-label', isOpen ? 'Đóng menu' : 'Mở menu');
+      menuButton.textContent = isOpen ? '✕' : '☰';
+    });
+
+    navLinks.addEventListener('click', event => {
+      if (event.target.closest('a')) {
+        navLinks.classList.remove('open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Mở menu');
+        menuButton.textContent = '☰';
+      }
+    });
+
+    document.querySelector('#login-form').addEventListener('submit', event => {
+      event.preventDefault();
+      document.querySelector('#form-message').textContent = 'Đây là biểu mẫu minh họa — chưa được kết nối với backend thực tế.';
+    });
   </script>
 </body>
 </html>
